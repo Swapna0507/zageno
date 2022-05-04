@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UI Pipeline Tests">
+    <parameter name="frontend" value="frontendURL"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="productName" value="15 ml conical tubes, polypropylene, Greiner Bio-One, trays"/>
+    <parameter name="quantity" value="5"/>
+    <parameter name="poNumber" value="12345"/>
+    <parameter name="backend" value="backendURL"/>
+    <test name="UI Tests">
+        <classes>
+            <class name="ValidateTheProductOrderPlacedTest"/>
+
+        </classes>
+    </test>
+</suite>
